@@ -33,12 +33,18 @@
 
       section {
         opacity: 0;
-        transform: translateY(40px);
         transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+      }
+
+      section:not(#subscription) {
+        transform: translateY(40px);
       }
 
       section.visible {
         opacity: 1;
+      }
+
+      section:not(#subscription).visible {
         transform: translateY(0);
       }
     </style>
@@ -55,7 +61,7 @@
   <!-- You can change the order of the components here -->
   <body class="font-['Inter'] bg-[#fff]">
     <header></header>
-    <main>
+    <main class="max-md:px-4">
       <section id="hero"></section>
       <section id="services"></section>
       <section id="mission"></section>
