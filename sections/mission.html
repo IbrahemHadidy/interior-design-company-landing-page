@@ -1,0 +1,109 @@
+<section
+  id="mission"
+  class="flex flex-row relative justify-between gap-[120px] w-full max-w-[1500px] mx-auto mt-48 pl-4 max-lg:flex-col max-lg:items-center max-lg:gap-[50px] max-lg:mt-16 max-lg:pl-2 max-sm:gap-[40px] max-sm:mt-10"
+>
+  <!-- Image -->
+  <img
+    src="assets/images/mission-img.png"
+    alt="mission-img"
+    class="w-[710px] h-[710px] object-cover object-center rounded-[4px] max-2xl:w-[500px] max-2xl:h-[320px] max-xl:w-[400px] max-xl:h-[280px] max-lg:hidden"
+  />
+
+  <!-- Content -->
+  <div
+    class="flex flex-col justify-between gap-8 max-lg:w-full max-lg:items-center max-sm:gap-4"
+  >
+    <h1
+      class="text-[#1F1F1F] text-[58px] font-semibold leading-none max-lg:w-full max-lg:text-center max-sm:text-[40px] max-sm:leading-[45px]"
+    >
+      Designing Your Dream With Brilliance
+    </h1>
+    <p
+      class="text-[#545454] text-[24px] font-medium leading-[165%] max-lg:w-full max-lg:text-center"
+    >
+      Elevate your spaces with bespoke interior designs that reflect your unique
+      style and aspirations, crafted with precision and brilliance for an
+      unforgettable living experience
+    </p>
+
+    <!-- FAQ Items -->
+    <div class="max-lg:w-full max-lg:mx-[40px]">
+      <div class="flex flex-col w-full cursor-pointer">
+        <div
+          class="flex flex-row w-full h-[80px] justify-between items-center"
+          onclick="toggleFaq(this)"
+        >
+          <h5
+            class="text-[#1F1F1F] text-[24px] font-semibold leading-[165%]"
+          >
+            Living Room Interior Design
+          </h5>
+          <img
+            src="assets/images/expand.svg"
+            alt="expand"
+            id="icon-expand"
+            class="absolute right-0 w-6 h-6 transition-opacity duration-300 opacity-100"
+          />
+          <img
+            src="assets/images/collapse.svg"
+            alt="collapse"
+            id="icon-collapse"
+            class="absolute right-0 w-6 h-6 transition-opacity duration-300 opacity-0"
+          />
+        </div>
+        <div
+          class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-100"
+        >
+          <p class="text-[#545454] text-[20px] p-4">
+            Our Living Room designs blend modern elegance with comfort, creating
+            a stylish yet functional space.
+          </p>
+        </div>
+        <hr class="w-full border-0 border-t border-[#DADADA]" />
+      </div>
+      <div class="flex flex-col w-full cursor-pointer">
+        <div
+          class="flex flex-row w-full h-[80px] justify-between items-center"
+          onclick="toggleFaq(this)"
+        >
+          <h5
+            class="text-[#1F1F1F] text-[24px] font-semibold leading-[165%]"
+          >
+            Commercial Office Room Interior Design
+          </h5>
+          <img
+            src="assets/images/expand.svg"
+            alt="expand"
+            id="icon-expand"
+            class="absolute right-0 w-6 h-6 transition-opacity duration-300 opacity-100"
+          />
+          <img
+            src="assets/images/collapse.svg"
+            alt="collapse"
+            id="icon-collapse"
+            class="absolute right-0 w-6 h-6 transition-opacity duration-300 opacity-0"
+          />
+        </div>
+        <div
+          class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-100"
+        >
+          <p class="text-[#545454] text-[20px] p-4">
+            Enhance productivity and aesthetics with our modern commercial
+            office design solutions.
+          </p>
+        </div>
+        <hr class="w-full border-0 border-t border-[#DADADA]" />
+      </div>
+    </div>
+
+    <!-- Learn More Button -->
+    <button
+      class="w-[300px] h-[85px] rounded-[4px] bg-neutral-900 flex items-center justify-center hover:bg-[#545454] max-lg:w-36 max-lg:h-12 max-sm:w-28 max-sm:h-10"
+    >
+      <span
+        class="text-white text-[24px] font-semibold leading-normal max-lg:text-[18px] max-sm:text-[16px]"
+        >Learn More</span
+      >
+    </button>
+  </div>
+</section>

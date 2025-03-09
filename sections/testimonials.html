@@ -1,0 +1,271 @@
+<section
+  id="testimonials"
+  class="relative w-full max-w-[1500px] mx-auto mt-20 md:mt-32 lg:mt-48 px-4 sm:px-6 lg:px-8"
+>
+  <div class="flex flex-col 2xl:flex-row gap-8 md:gap-12 lg:gap-[60px]">
+    <div class="flex flex-col gap-8 order-2 2xl:order-1">
+      <img
+        src="assets/images/testimonials-img.jpeg"
+        alt="testimonials-img"
+        class="w-[710px] h-[710px] aspect-square object-cover object-center rounded-[4px] hidden 2xl:block"
+      />
+      <div class="flex gap-4 justify-start max-2xl:justify-center">
+        <button
+          class="flex items-center justify-center w-12 h-12 md:w-[73px] md:h-[73px] rounded-[4px] bg-[#F1F1F1] hover:bg-[#E2E2E2] transition-colors duration-200"
+          onclick="showPreviousCard()"
+        >
+          <img
+            src="assets/images/arrow-left.svg"
+            alt="arrow-left"
+            class="w-6 h-6"
+          />
+        </button>
+        <button
+          class="flex items-center justify-center w-12 h-12 md:w-[73px] md:h-[73px] rounded-[4px] bg-[#F1F1F1] hover:bg-[#E2E2E2] transition-colors duration-200"
+          onclick="showNextCard()"
+        >
+          <img
+            src="assets/images/arrow-right.svg"
+            alt="arrow-right"
+            class="w-6 h-6"
+          />
+        </button>
+      </div>
+    </div>
+
+    <h1
+      class="text-[#1F1F1F] text-3xl sm:text-4xl md:text-5xl lg:text-[58px] font-semibold text-center 2xl:text-left order-1 2xl:order-2"
+    >
+      What Our Customers Say About Us
+    </h1>
+
+    <div
+      id="testimony-cards"
+      class="absolute right-0 bottom-0 w-[1280px] min-h-[630px] rounded-[4px] border-t-[30px] border-l-[30px] border-white bg-white max-2xl:relative max-2xl:w-full max-2xl:min-h-[520px] max-lg:min-h-[600px] max-2xl:border-none max-2xl:order-2 max-sm:min-h-[320px]"
+    >
+      <!-- Testimony Set 1 -->
+      <div
+        class="absolute flex flex-row gap-12 bg-white opacity-100 transition-opacity duration-1000 ease-in-out max-2xl:w-full max-2xl:flex-col max-2xl:w-auto max-2xl:px-4 max-2xl:items-center max-2xl:justify-center"
+      >
+        <div
+          class="flex flex-col justify-between p-16 rounded-[4px] w-[600px] h-[600px] bg-[#1F1F1F] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10"
+        >
+          <img
+            src="assets/images/double-quote.svg"
+            alt="double-quote"
+            class="h-8 md:h-10 self-start"
+          />
+          <p
+            class="text-white text-lg md:text-xl lg:text-[24px] font-medium leading-relaxed"
+          >
+            Working with your design team was an absolute pleasure. The
+            attention to detail and creativity exceeded my expectations. Thank
+            you for making my home beautiful!
+          </p>
+          <div class="flex flex-row items-center gap-4">
+            <img
+              src="assets/images/testimony-person-1.png"
+              alt="testimony-person"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="flex flex-col gap-2">
+              <h6
+                class="text-white text-lg md:text-xl lg:text-[24px] font-semibold leading-none"
+              >
+                James Bennett
+              </h6>
+              <p
+                class="text-[#929292] text-base md:text-lg lg:text-[20px] font-medium leading-none"
+              >
+                New York, USA
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between p-16 rounded-[4px] w-[600px] h-[600px] bg-[#1F1F1F] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:hidden"
+        >
+          <img
+            src="assets/images/double-quote.svg"
+            alt="double-quote"
+            class="h-8 md:h-10 self-start"
+          />
+          <p
+            class="text-white text-lg md:text-xl lg:text-[24px] font-medium leading-relaxed"
+          >
+            Exceptional service! From the initial consultation to the final
+            reveal, your team demonstrated professionalism and a keen eye for
+            design. Highly recommend!
+          </p>
+          <div class="flex flex-row items-center gap-4">
+            <img
+              src="assets/images/testimony-person-2.png"
+              alt="testimony-person"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="flex flex-col gap-2">
+              <h6
+                class="text-white text-lg md:text-xl lg:text-[24px] font-semibold leading-none"
+              >
+                Orion Larkspur
+              </h6>
+              <p
+                class="text-[#929292] text-base md:text-lg lg:text-[20px] font-medium leading-none"
+              >
+                Toronto, Canada
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimony Set 2 -->
+      <div
+        class="absolute flex flex-row gap-12 bg-white opacity-0 transition-opacity duration-1000 ease-in-out max-2xl:w-full max-2xl:flex-col max-2xl:w-auto max-2xl:px-4 max-2xl:items-center max-2xl:justify-center"
+      >
+        <div
+          class="flex flex-col justify-between p-16 rounded-[4px] w-[600px] h-[600px] bg-[#1F1F1F] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10"
+        >
+          <img
+            src="assets/images/double-quote.svg"
+            alt="double-quote"
+            class="h-8 md:h-10 self-start"
+          />
+          <p
+            class="text-white text-lg md:text-xl lg:text-[24px] font-medium leading-relaxed"
+          >
+            The design process was seamless, and the final result exceeded my
+            expectations. My space feels completely transformed!
+          </p>
+          <div class="flex flex-row items-center gap-4">
+            <img
+              src="assets/images/testimony-person-3.png"
+              alt="testimony-person"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="flex flex-col gap-2">
+              <h6
+                class="text-white text-lg md:text-xl lg:text-[24px] font-semibold leading-none"
+              >
+                David Mitchell
+              </h6>
+              <p
+                class="text-[#929292] text-base md:text-lg lg:text-[20px] font-medium leading-none"
+              >
+                London, UK
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between p-16 rounded-[4px] w-[600px] h-[600px] bg-[#1F1F1F] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:hidden"
+        >
+          <img
+            src="assets/images/double-quote.svg"
+            alt="double-quote"
+            class="h-8 md:h-10 self-start"
+          />
+          <p
+            class="text-white text-lg md:text-xl lg:text-[24px] font-medium leading-relaxed"
+          >
+            Outstanding service! The transformation of my office space exceeded
+            expectations. The attention to detail was simply remarkable.
+          </p>
+          <div class="flex flex-row items-center gap-4">
+            <img
+              src="assets/images/testimony-person-4.png"
+              alt="testimony-person"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="flex flex-col gap-2">
+              <h6
+                class="text-white text-lg md:text-xl lg:text-[24px] font-semibold leading-none"
+              >
+                Liam Johansson
+              </h6>
+              <p
+                class="text-[#929292] text-base md:text-lg lg:text-[20px] font-medium leading-none"
+              >
+                Stockholm, Sweden
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimony Set 3 -->
+      <div
+        class="absolute flex flex-row gap-12 bg-white opacity-0 transition-opacity duration-1000 ease-in-out max-2xl:w-full max-2xl:flex-col max-2xl:w-auto max-2xl:px-4 max-2xl:items-center max-2xl:justify-center"
+      >
+        <div
+          class="flex flex-col justify-between p-16 rounded-[4px] w-[600px] h-[600px] bg-[#1F1F1F] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10"
+        >
+          <img
+            src="assets/images/double-quote.svg"
+            alt="double-quote"
+            class="h-8 md:h-10 self-start"
+          />
+          <p
+            class="text-white text-lg md:text-xl lg:text-[24px] font-medium leading-relaxed"
+          >
+            The team’s expertise and creativity brought my vision to life. Every
+            detail was considered, making my space both functional and stylish.
+          </p>
+          <div class="flex flex-row items-center gap-4">
+            <img
+              src="assets/images/testimony-person-5.png"
+              alt="testimony-person"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="flex flex-col gap-2">
+              <h6
+                class="text-white text-lg md:text-xl lg:text-[24px] font-semibold leading-none"
+              >
+                Ethan Walker
+              </h6>
+              <p
+                class="text-[#929292] text-base md:text-lg lg:text-[20px] font-medium leading-none"
+              >
+                Chicago, USA
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col justify-between p-16 rounded-[4px] w-[600px] h-[600px] bg-[#1F1F1F] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:hidden"
+        >
+          <img
+            src="assets/images/double-quote.svg"
+            alt="double-quote"
+            class="h-8 md:h-10 self-start"
+          />
+          <p
+            class="text-white text-lg md:text-xl lg:text-[24px] font-medium leading-relaxed"
+          >
+            Outstanding service! The transformation of my office space exceeded
+            expectations. The attention to detail was simply remarkable.
+          </p>
+          <div class="flex flex-row items-center gap-4">
+            <img
+              src="assets/images/testimony-person-6.png"
+              alt="testimony-person"
+              class="w-12 h-12 rounded-full"
+            />
+            <div class="flex flex-col gap-2">
+              <h6
+                class="text-white text-lg md:text-xl lg:text-[24px] font-semibold leading-none"
+              >
+                Marcus Bennett
+              </h6>
+              <p
+                class="text-[#929292] text-base md:text-lg lg:text-[20px] font-medium leading-none"
+              >
+                Berlin, Germany
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
