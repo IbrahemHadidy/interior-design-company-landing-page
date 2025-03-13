@@ -13,22 +13,29 @@ setTimeout(() => {
 
   if (menuBtn && closeBtn && menu) {
     // Open Menu
-    menuBtn.addEventListener("click", () => {
-      menu.classList.remove("translate-x-full");
-      menu.classList.add("translate-x-0");
+    menuBtn.addEventListener("click", (event) => {
+      event.stopPropagation();
+      menu.classList.remove("hidden-menu");
+      menu.classList.add("visible-menu");
     });
 
     // Close Menu
     closeBtn.addEventListener("click", () => {
-      menu.classList.remove("translate-x-0");
-      menu.classList.add("translate-x-full");
+      menu.classList.remove("visible-menu");
+      menu.classList.add("hidden-menu");
     });
 
     // Click outside to close menu
     document.addEventListener("click", (event) => {
       if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-        menu.classList.add("translate-x-full");
+        menu.classList.remove("visible-menu");
+        menu.classList.add("hidden-menu");
       }
+    });
+
+    // Prevent clicks inside menu from closing it
+    menu.addEventListener("click", (event) => {
+      event.stopPropagation();
     });
   }
 }, 500);

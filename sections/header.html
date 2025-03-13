@@ -1,124 +1,63 @@
-<header class="w-full h-[130px] max-lg:h-[80px]">
+<header>
   <!-- Desktop Header -->
-  <div
-    class="top-[45px] relative flex justify-between items-center max-w-[1500px] h-[60px] mx-auto px-4 max-lg:hidden"
-  >
+  <div class="desktop-header">
     <img src="./assets/images/logo.svg" alt="logo" />
 
     <nav>
-      <ul class="flex items-center flex-row justify-between w-[510px]">
+      <ul class="nav-list">
         <li>
-          <a
-            href="#hero"
-            class="text-[#545454] text-[22px] font-semibold leading-normal hover:text-neutral-900"
-            >Home</a
-          >
+          <a href="#hero" class="nav-link">Home</a>
         </li>
         <li>
-          <a
-            href="#services"
-            class="text-[#545454] text-[22px] font-semibold leading-normal hover:text-neutral-900"
-            >Services</a
-          >
+          <a href="#services" class="nav-link">Services</a>
         </li>
         <li>
-          <a
-            href="#"
-            class="text-[#545454] text-[22px] font-semibold leading-normal hover:text-neutral-900"
-            >Contact</a
-          >
+          <a href="#" class="nav-link">Contact</a>
         </li>
         <li>
-          <a
-            href="#"
-            class="text-[#545454] text-[22px] font-semibold leading-normal hover:text-neutral-900"
-            >Support</a
-          >
+          <a href="#" class="nav-link">Support</a>
         </li>
       </ul>
     </nav>
 
-    <button
-      class="w-[175px] h-[60px] rounded-[4px] bg-neutral-900 flex items-center justify-center hover:bg-[#545454]"
-    >
-      <span
-        class="text-white text-[20px] font-semibold leading-normal"
-        >Sign Up</span
-      >
+    <button class="signup-button">
+      <span class="signup-text">Sign Up</span>
     </button>
   </div>
 
   <!-- Mobile Header -->
-  <div
-    class="hidden top-4 relative w-full h-[40px] max-lg:flex items-center justify-center px-4"
-  >
+  <div class="mobile-header">
     <img src="./assets/images/logo.svg" alt="logo" />
-    <button
-      id="mobile-menu-button"
-      class="absolute right-4 w-12 h-12 text-4xl flex items-center justify-center"
-      aria-label="Toggle Menu"
-    >
+    <button id="mobile-menu-button" class="mobile-menu-toggle" aria-label="Toggle Menu">
       ☰
     </button>
   </div>
 
-  <div
-    id="mobile-menu"
-    class="fixed z-20 top-0 right-0 w-[400px] h-full p-4 bg-white shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out"
-  >
-    <div class="flex items-center justify-between w-full gap-4">
+  <div id="mobile-menu" class="mobile-menu">
+    <div class="mobile-menu-header">
       <!-- Sign Up Button -->
-      <button
-        class="w-36 h-12 sm:w-44 sm:h-14 rounded-md bg-neutral-900 flex items-center justify-center hover:bg-[#545454]"
-      >
-        <span
-          class="text-white text-base sm:text-lg font-semibold leading-normal"
-        >
-          Sign Up
-        </span>
+      <button class="mobile-signup-button">
+        <span class="mobile-signup-text">Sign Up</span>
       </button>
 
       <!-- Close Button -->
-      <button
-        id="close-menu-button"
-        class="text-4xl w-12 h-12 rounded-md hover:bg-gray-200 transition flex items-center justify-center"
-      >
+      <button id="close-menu-button" class="close-menu-button">
         X
       </button>
     </div>
 
-    <ul class="flex flex-col items-start mt-4 gap-2">
-      <li class="w-full">
-        <a
-          href="#hero"
-          class="block w-full px-4 py-2 text-[#545454] text-[22px] font-semibold leading-normal hover:bg-gray-100 hover:text-neutral-900 rounded-md transition"
-        >
-          Home
-        </a>
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a href="#hero" class="mobile-nav-link">Home</a>
       </li>
-      <li class="w-full">
-        <a
-          href="#services"
-          class="block w-full px-4 py-2 text-[#545454] text-[22px] font-semibold leading-normal hover:bg-gray-100 hover:text-neutral-900 rounded-md transition"
-        >
-          Services
-        </a>
+      <li class="mobile-nav-item">
+        <a href="#services" class="mobile-nav-link">Services</a>
       </li>
-      <li class="w-full">
-        <a
-          href="#"
-          class="block w-full px-4 py-2 text-[#545454] text-[22px] font-semibold leading-normal hover:bg-gray-100 hover:text-neutral-900 rounded-md transition"
-        >
-          Contact
-        </a>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link">Contact</a>
       </li>
-      <li class="w-full">
-        <a
-          href="#"
-          class="block w-full px-4 py-2 text-[#545454] text-[22px] font-semibold leading-normal hover:bg-gray-100 hover:text-neutral-900 rounded-md transition"
-        >
-          Support
-        </a>
+      <li class="mobile-nav-item">
+        <a href="#" class="mobile-nav-link">Support</a>
       </li>
     </ul>
   </div>

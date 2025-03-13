@@ -13,43 +13,15 @@
     <title>VivaDecor | Stylish & Modern Interior Design Solutions</title>
 
     <!-- Styles -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-      html {
-        scroll-behavior: smooth;
-      }
-
-      ::-webkit-scrollbar {
-        width: 12px;
-        background: transparent;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background-color: #1f1f1f;
-        border-radius: 0;
-      }
-
-      section {
-        opacity: 0;
-        transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-      }
-
-      section:not(#subscription) {
-        transform: translateY(40px);
-      }
-
-      section.visible {
-        opacity: 1;
-      }
-
-      section:not(#subscription).visible {
-        transform: translateY(0);
-      }
-    </style>
-
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/services.css" />
+    <link rel="stylesheet" href="./styles/mission.css" />
+    <link rel="stylesheet" href="./styles/our-approach.css" />
+    <link rel="stylesheet" href="./styles/testimonials.css" />
+    <link rel="stylesheet" href="./styles/subscription.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <!-- Scripts -->
     <script src="./scripts/app.js" defer></script>
@@ -59,9 +31,9 @@
   </head>
 
   <!-- You can change the order of the components here -->
-  <body class="font-['Inter'] bg-[#fff]">
+  <body>
     <header></header>
-    <main class="max-md:px-4">
+    <main>
       <section id="hero"></section>
       <section id="services"></section>
       <section id="mission"></section>

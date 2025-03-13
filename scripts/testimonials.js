@@ -4,14 +4,13 @@ let index = 0;
 let cards = [];
 
 setTimeout(() => {
-  cards = document.querySelectorAll("#testimony-cards > div");
+  cards = document.querySelectorAll("#testimony-cards > .testimony-set");
   updateCardVisibility();
 }, 1500);
 
 function updateCardVisibility() {
   cards.forEach((card, i) => {
-    card.classList.toggle("opacity-100", i === index);
-    card.classList.toggle("opacity-0", i !== index);
+    card.classList.toggle("visible", i === index);
   });
 }
 
