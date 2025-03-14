@@ -1,63 +1,63 @@
-<header>
+<header class="w-full h-[130px] lg:h-20">
   <!-- Desktop Header -->
-  <div class="desktop-header">
+  <div class="relative top-[45px] hidden lg:flex justify-between items-center max-w-[1500px] h-15 mx-auto px-4">
     <img src="./assets/images/logo.svg" alt="logo" />
 
     <nav>
-      <ul class="nav-list">
+      <ul class="flex items-center flex-row justify-between w-[510px]">
         <li>
-          <a href="#hero" class="nav-link">Home</a>
+          <a href="#hero" class="text-[#545454] text-[22px] font-semibold leading-none hover:text-[#171717]">Home</a>
         </li>
         <li>
-          <a href="#services" class="nav-link">Services</a>
+          <a href="#services" class="text-[#545454] text-[22px] font-semibold leading-none hover:text-[#171717]">Services</a>
         </li>
         <li>
-          <a href="#" class="nav-link">Contact</a>
+          <a href="#" class="text-[#545454] text-[22px] font-semibold leading-none hover:text-[#171717]">Contact</a>
         </li>
         <li>
-          <a href="#" class="nav-link">Support</a>
+          <a href="#" class="text-[#545454] text-[22px] font-semibold leading-none hover:text-[#171717]">Support</a>
         </li>
       </ul>
     </nav>
 
-    <button class="signup-button">
-      <span class="signup-text">Sign Up</span>
+    <button class="w-[175px] h-[60px] rounded bg-[#171717] flex items-center justify-center hover:bg-[#545454]">
+      <span class="text-white text-xl font-semibold leading-none">Sign Up</span>
     </button>
   </div>
 
   <!-- Mobile Header -->
-  <div class="mobile-header">
+  <div class="flex lg:hidden relative top-4 w-full h-10 items-center justify-center px-4">
     <img src="./assets/images/logo.svg" alt="logo" />
-    <button id="mobile-menu-button" class="mobile-menu-toggle" aria-label="Toggle Menu">
+    <button id="mobile-menu-button" class="absolute right-4 w-12 h-12 text-4xl flex items-center justify-center" aria-label="Toggle Menu">
       ☰
     </button>
   </div>
 
-  <div id="mobile-menu" class="mobile-menu">
-    <div class="mobile-menu-header">
+  <div id="mobile-menu" class="fixed z-20 top-0 right-0 w-[400px] h-full p-4 bg-white shadow-[0_10px_15px_rgba(0,0,0,0.1)] translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex items-center justify-between w-full gap-4">
       <!-- Sign Up Button -->
-      <button class="mobile-signup-button">
-        <span class="mobile-signup-text">Sign Up</span>
+      <button class="w-36 h-12 rounded-md bg-[#171717] flex items-center justify-center hover:bg-[#545454] sm:w-44 sm:h-14">
+        <span class="text-white text-base font-semibold leading-none sm:text-lg">Sign Up</span>
       </button>
 
       <!-- Close Button -->
-      <button id="close-menu-button" class="close-menu-button">
+      <button id="close-menu-button" class="text-4xl w-12 h-12 rounded-md flex items-center justify-center hover:bg-gray-200 transition-colors duration-300">
         X
       </button>
     </div>
 
-    <ul class="mobile-nav-list">
-      <li class="mobile-nav-item">
-        <a href="#hero" class="mobile-nav-link">Home</a>
+    <ul class="flex flex-col items-start mt-4 gap-2">
+      <li class="w-full">
+        <a href="#hero" class="mobile-nav-link block w-full p-2 px-4 text-[#545454] text-[22px] font-semibold leading-none rounded-md hover:bg-gray-100 hover:text-[#171717] transition-all duration-300">Home</a>
       </li>
-      <li class="mobile-nav-item">
-        <a href="#services" class="mobile-nav-link">Services</a>
+      <li class="w-full">
+        <a href="#services" class="mobile-nav-link block w-full p-2 px-4 text-[#545454] text-[22px] font-semibold leading-none rounded-md hover:bg-gray-100 hover:text-[#171717] transition-all duration-300">Services</a>
       </li>
-      <li class="mobile-nav-item">
-        <a href="#" class="mobile-nav-link">Contact</a>
+      <li class="w-full">
+        <a href="#" class="mobile-nav-link block w-full p-2 px-4 text-[#545454] text-[22px] font-semibold leading-none rounded-md hover:bg-gray-100 hover:text-[#171717] transition-all duration-300">Contact</a>
       </li>
-      <li class="mobile-nav-item">
-        <a href="#" class="mobile-nav-link">Support</a>
+      <li class="w-full">
+        <a href="#" class="mobile-nav-link block w-full p-2 px-4 text-[#545454] text-[22px] font-semibold leading-none rounded-md hover:bg-gray-100 hover:text-[#171717] transition-all duration-300">Support</a>
       </li>
     </ul>
   </div>

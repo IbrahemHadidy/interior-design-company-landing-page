@@ -1,18 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Inter", sans-serif;
-  background-color: #fff;
-}
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -41,25 +27,4 @@ section.visible > * {
 
 section:not(#subscription).visible > * {
   transform: translateY(0);
-}
-
-@media (max-width: 767px) {
-  main {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }

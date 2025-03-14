@@ -1,51 +1,51 @@
-<section id="mission" class="mission-section">
+<section id="mission" class="flex flex-row relative justify-between gap-[120px] w-full max-w-[1500px] mx-auto mt-[192px] px-4 max-lg:flex-col max-lg:items-center max-lg:gap-10 max-lg:mt-16 max-lg:px-6 max-sm:gap-8 max-sm:mt-10 max-sm:px-5">
   <!-- Image -->
-  <img src="assets/images/mission-img.png" alt="mission-img" class="mission-image" loading="lazy" />
+  <img src="assets/images/mission-img.png" alt="mission-img" class="w-[710px] h-[710px] object-cover object-center rounded max-2xl:w-[500px] max-2xl:h-[320px] max-xl:w-[400px] max-xl:h-[280px] max-lg:hidden" loading="lazy" />
 
   <!-- Content -->
-  <div class="mission-content">
-    <h1 class="mission-title">Designing Your Dream With Brilliance</h1>
-    <p class="mission-description">
+  <div class="flex flex-col justify-between gap-8 max-lg:w-full max-lg:items-center max-sm:gap-5 max-sm:max-w-[500px]">
+    <h1 class="text-[#1f1f1f] text-[58px] font-semibold leading-none max-lg:w-full max-lg:text-center max-lg:text-[48px] max-sm:text-[36px] max-sm:leading-10">Designing Your Dream With Brilliance</h1>
+    <p class="text-[#545454] text-2xl font-medium leading-[1.65] max-lg:w-full max-lg:text-center max-sm:text-xl">
       Elevate your spaces with bespoke interior designs that reflect your unique
       style and aspirations, crafted with precision and brilliance for an
       unforgettable living experience
     </p>
 
     <!-- FAQ Items -->
-    <div class="faq-container">
-      <div class="faq-item">
-        <div class="faq-header" onclick="toggleFaq(this)">
-          <h5 class="faq-title">Living Room Interior Design</h5>
-          <img src="assets/images/expand.svg" alt="expand" class="faq-icon-expand" />
-          <img src="assets/images/collapse.svg" alt="collapse" class="faq-icon-collapse" />
+    <div class="w-full max-lg:mx-0">
+      <div class="flex flex-col w-full cursor-pointer">
+        <div class="flex flex-row w-full h-20 justify-between items-center relative" onclick="toggleFaq(this)">
+          <h5 class="text-[#1f1f1f] text-2xl font-semibold leading-[1.65] max-sm:text-xl">Living Room Interior Design</h5>
+          <img src="assets/images/expand.svg" alt="expand" class="icon-expand absolute right-0 w-6 h-6 opacity-100 transition-opacity duration-300" />
+          <img src="assets/images/collapse.svg" alt="collapse" class="icon-collapse absolute right-0 w-6 h-6 opacity-0 transition-opacity duration-300" />
         </div>
-        <div class="faq-content">
-          <p class="faq-text">
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-100">
+          <p class="text-[#545454] text-xl p-4 max-sm:text-lg">
             Our Living Room designs blend modern elegance with comfort, creating
             a stylish yet functional space.
           </p>
         </div>
-        <hr class="faq-divider" />
+        <hr class="w-full border-t border-[#dadada]" />
       </div>
-      <div class="faq-item">
-        <div class="faq-header" onclick="toggleFaq(this)">
-          <h5 class="faq-title">Commercial Office Room Interior Design</h5>
-          <img src="assets/images/expand.svg" alt="expand" class="faq-icon-expand" />
-          <img src="assets/images/collapse.svg" alt="collapse" class="faq-icon-collapse" />
+      <div class="flex flex-col w-full cursor-pointer">
+        <div class="flex flex-row w-full h-20 justify-between items-center relative" onclick="toggleFaq(this)">
+          <h5 class="text-[#1f1f1f] text-2xl font-semibold leading-[1.65] max-sm:text-xl">Commercial Office Room Interior Design</h5>
+          <img src="assets/images/expand.svg" alt="expand" class="icon-expand absolute right-0 w-6 h-6 opacity-100 transition-opacity duration-300" />
+          <img src="assets/images/collapse.svg" alt="collapse" class="icon-collapse absolute right-0 w-6 h-6 opacity-0 transition-opacity duration-300" />
         </div>
-        <div class="faq-content">
-          <p class="faq-text">
+        <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-gray-100">
+          <p class="text-[#545454] text-xl p-4 max-sm:text-lg">
             Enhance productivity and aesthetics with our modern commercial
             office design solutions.
           </p>
         </div>
-        <hr class="faq-divider" />
+        <hr class="w-full border-t border-[#dadada]" />
       </div>
     </div>
 
     <!-- Learn More Button -->
-    <button class="learn-more-button">
-      <span class="learn-more-text">Learn More</span>
+    <button class="w-[300px] h-[85px] rounded bg-[#171717] flex items-center justify-center hover:bg-[#545454] max-lg:w-36 max-lg:h-12 max-sm:w-28 max-sm:h-10">
+      <span class="text-white text-2xl font-semibold leading-none max-lg:text-lg max-sm:text-base">Learn More</span>
     </button>
   </div>
 </section>

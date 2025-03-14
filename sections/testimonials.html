@@ -1,174 +1,174 @@
-<section id="testimonials" class="testimonials-section">
-  <div class="testimonials-container">
-    <div class="testimonials-image-controls">
+<section id="testimonials" class="relative w-full max-w-[1500px] mx-auto mt-20 px-4 md:mt-32 md:px-6 lg:mt-48 lg:px-8 max-2xl:pb-[20px] max-lg:-translate-y-[10px]">
+  <div class="flex flex-col gap-8 md:gap-12 lg:gap-[60px] 2xl:flex-row">
+    <div class="flex flex-col gap-8 order-3 2xl:order-1 max-2xl:translate-y-[40px] max-lg:translate-y-[20px]">
       <img
         src="assets/images/testimonials-img.jpeg"
         alt="testimonials-img"
-        class="testimonials-image"
+        class="w-[710px] h-[710px] aspect-square object-cover object-center rounded hidden 2xl:block"
         loading="lazy"
       />
-      <div class="testimonials-controls">
-        <button class="control-button prev-button" onclick="showPreviousCard()">
+      <div class="flex gap-4 justify-start max-2xl:justify-center">
+        <button class="prev-button flex items-center justify-center w-12 h-12 rounded bg-[#f1f1f1] transition-colors duration-200 hover:bg-[#e2e2e2] md:w-[73px] md:h-[73px]" onclick="showPreviousCard()">
           <img
             src="assets/images/arrow-left.svg"
             alt="arrow-left"
-            class="control-icon"
+            class="control-icon w-6 h-6"
           />
         </button>
-        <button class="control-button next-button" onclick="showNextCard()">
+        <button class="next-button flex items-center justify-center w-12 h-12 rounded bg-[#f1f1f1] transition-colors duration-200 hover:bg-[#e2e2e2] md:w-[73px] md:h-[73px]" onclick="showNextCard()">
           <img
             src="assets/images/arrow-right.svg"
             alt="arrow-right"
-            class="control-icon"
+            class="control-icon w-6 h-6"
           />
         </button>
       </div>
     </div>
 
-    <h1 class="testimonials-title">What Our Customers Say About Us</h1>
+    <h1 class="text-[#1f1f1f] text-[30px] font-semibold text-center order-1 sm:text-[36px] md:text-[48px] lg:text-[58px] 2xl:text-left 2xl:order-2 max-2xl:translate-y-[-50px]">What Our Customers Say About Us</h1>
 
-    <div id="testimony-cards" class="testimonials-cards">
+    <div id="testimony-cards" class="absolute right-0 bottom-0 w-[1280px] min-h-[630px] order-2 rounded border-t-[30px] border-l-[30px] border-white bg-white max-2xl:relative max-2xl:w-full max-2xl:min-h-[520px] max-2xl:border-none max-lg:mt-[45px] max-lg:min-h-[600px] max-sm:mt-0 max-sm:min-h-[380px]">
       <!-- Testimony Set 1 -->
-      <div class="testimony-set testimony-set-1">
-        <div class="testimony-card">
+      <div class="absolute flex flex-row gap-12 bg-white opacity-0 transition-opacity duration-1000 ease-in-out w-full h-full max-2xl:flex-col max-2xl:px-4 max-2xl:items-center max-2xl:justify-center max-2xl:gap-4">
+        <div class="flex flex-col justify-between p-16 rounded w-[600px] h-[600px] bg-[#1f1f1f] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10">
           <img
             src="assets/images/double-quote.svg"
             alt="double-quote"
-            class="quote-icon"
+            class="h-8 self-start md:h-10"
           />
-          <p class="testimony-text">
+          <p class="text-white text-lg font-medium leading-[1.5] md:text-xl lg:text-2xl">
             Working with your design team was an absolute pleasure. The
             attention to detail and creativity exceeded my expectations. Thank
             you for making my home beautiful!
           </p>
-          <div class="testimony-author">
+          <div class="flex flex-row items-center gap-4">
             <img
               src="assets/images/testimony-person-1.png"
               alt="testimony-person"
-              class="author-image"
+              class="w-12 h-12 rounded-full"
             />
-            <div class="author-info">
-              <h6 class="author-name">James Bennett</h6>
-              <p class="author-location">New York, USA</p>
+            <div class="flex flex-col gap-2">
+              <h6 class="text-white text-lg font-semibold leading-none md:text-xl lg:text-2xl">James Bennett</h6>
+              <p class="text-[#929292] text-base font-medium leading-none md:text-lg lg:text-xl">New York, USA</p>
             </div>
           </div>
         </div>
-        <div class="testimony-card testimony-card-secondary">
+        <div class="flex flex-col justify-between p-16 rounded w-[600px] h-[600px] bg-[#1f1f1f] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10 max-sm:hidden">
           <img
             src="assets/images/double-quote.svg"
             alt="double-quote"
-            class="quote-icon"
+            class="h-8 self-start md:h-10"
           />
-          <p class="testimony-text">
+          <p class="text-white text-lg font-medium leading-[1.5] md:text-xl lg:text-2xl">
             Exceptional service! From the initial consultation to the final
             reveal, your team demonstrated professionalism and a keen eye for
             design. Highly recommend!
           </p>
-          <div class="testimony-author">
+          <div class="flex flex-row items-center gap-4">
             <img
               src="assets/images/testimony-person-2.png"
               alt="testimony-person"
-              class="author-image"
+              class="w-12 h-12 rounded-full"
             />
-            <div class="author-info">
-              <h6 class="author-name">Orion Larkspur</h6>
-              <p class="author-location">Toronto, Canada</p>
+            <div class="flex flex-col gap-2">
+              <h6 class="text-white text-lg font-semibold leading-none md:text-xl lg:text-2xl">Orion Larkspur</h6>
+              <p class="text-[#929292] text-base font-medium leading-none md:text-lg lg:text-xl">Toronto, Canada</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Testimony Set 2 -->
-      <div class="testimony-set testimony-set-2">
-        <div class="testimony-card">
+      <div class="absolute flex flex-row gap-12 bg-white opacity-0 transition-opacity duration-1000 ease-in-out w-full h-full max-2xl:flex-col max-2xl:px-4 max-2xl:items-center max-2xl:justify-center max-2xl:gap-4">
+        <div class="flex flex-col justify-between p-16 rounded w-[600px] h-[600px] bg-[#1f1f1f] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10">
           <img
             src="assets/images/double-quote.svg"
             alt="double-quote"
-            class="quote-icon"
+            class="h-8 self-start md:h-10"
           />
-          <p class="testimony-text">
+          <p class="text-white text-lg font-medium leading-[1.5] md:text-xl lg:text-2xl">
             The design process was seamless, and the final result exceeded my
             expectations. My space feels completely transformed!
           </p>
-          <div class="testimony-author">
+          <div class="flex flex-row items-center gap-4">
             <img
               src="assets/images/testimony-person-3.png"
               alt="testimony-person"
-              class="author-image"
+              class="w-12 h-12 rounded-full"
             />
-            <div class="author-info">
-              <h6 class="author-name">David Mitchell</h6>
-              <p class="author-location">London, UK</p>
+            <div class="flex flex-col gap-2">
+              <h6 class="text-white text-lg font-semibold leading-none md:text-xl lg:text-2xl">David Mitchell</h6>
+              <p class="text-[#929292] text-base font-medium leading-none md:text-lg lg:text-xl">London, UK</p>
             </div>
           </div>
         </div>
-        <div class="testimony-card testimony-card-secondary">
+        <div class="flex flex-col justify-between p-16 rounded w-[600px] h-[600px] bg-[#1f1f1f] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10 max-sm:hidden">
           <img
             src="assets/images/double-quote.svg"
             alt="double-quote"
-            class="quote-icon"
+            class="h-8 self-start md:h-10"
           />
-          <p class="testimony-text">
+          <p class="text-white text-lg font-medium leading-[1.5] md:text-xl lg:text-2xl">
             Outstanding service! The transformation of my office space exceeded
             expectations. The attention to detail was simply remarkable.
           </p>
-          <div class="testimony-author">
+          <div class="flex flex-row items-center gap-4">
             <img
               src="assets/images/testimony-person-4.png"
               alt="testimony-person"
-              class="author-image"
+              class="w-12 h-12 rounded-full"
             />
-            <div class="author-info">
-              <h6 class="author-name">Liam Johansson</h6>
-              <p class="author-location">Stockholm, Sweden</p>
+            <div class="flex flex-col gap-2">
+              <h6 class="text-white text-lg font-semibold leading-none md:text-xl lg:text-2xl">Liam Johansson</h6>
+              <p class="text-[#929292] text-base font-medium leading-none md:text-lg lg:text-xl">Stockholm, Sweden</p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Testimony Set 3 -->
-      <div class="testimony-set testimony-set-3">
-        <div class="testimony-card">
+      <div class="absolute flex flex-row gap-12 bg-white opacity-0 transition-opacity duration-1000 ease-in-out w-full h-full max-2xl:flex-col max-2xl:px-4 max-2xl:items-center max-2xl:justify-center max-2xl:gap-4">
+        <div class="flex flex-col justify-between p-16 rounded w-[600px] h-[600px] bg-[#1f1f1f] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10">
           <img
             src="assets/images/double-quote.svg"
             alt="double-quote"
-            class="quote-icon"
+            class="h-8 self-start md:h-10"
           />
-          <p class="testimony-text">
+          <p class="text-white text-lg font-medium leading-[1.5] md:text-xl lg:text-2xl">
             The team’s expertise and creativity brought my vision to life. Every
             detail was considered, making my space both functional and stylish.
           </p>
-          <div class="testimony-author">
+          <div class="flex flex-row items-center gap-4">
             <img
               src="assets/images/testimony-person-5.png"
               alt="testimony-person"
-              class="author-image"
+              class="w-12 h-12 rounded-full"
             />
-            <div class="author-info">
-              <h6 class="author-name">Ethan Walker</h6>
-              <p class="author-location">Chicago, USA</p>
+            <div class="flex flex-col gap-2">
+              <h6 class="text-white text-lg font-semibold leading-none md:text-xl lg:text-2xl">Ethan Walker</h6>
+              <p class="text-[#929292] text-base font-medium leading-none md:text-lg lg:text-xl">Chicago, USA</p>
             </div>
           </div>
         </div>
-        <div class="testimony-card testimony-card-secondary">
+        <div class="flex flex-col justify-between p-16 rounded w-[600px] h-[600px] bg-[#1f1f1f] max-2xl:w-full max-2xl:h-auto max-2xl:gap-12 max-2xl:p-8 max-sm:p-10 max-sm:hidden">
           <img
             src="assets/images/double-quote.svg"
             alt="double-quote"
-            class="quote-icon"
+            class="h-8 self-start md:h-10"
           />
-          <p class="testimony-text">
+          <p class="text-white text-lg font-medium leading-[1.5] md:text-xl lg:text-2xl">
             Outstanding service! The transformation of my office space exceeded
             expectations. The attention to detail was simply remarkable.
           </p>
-          <div class="testimony-author">
+          <div class="flex flex-row items-center gap-4">
             <img
               src="assets/images/testimony-person-6.png"
               alt="testimony-person"
-              class="author-image"
+              class="w-12 h-12 rounded-full"
             />
-            <div class="author-info">
-              <h6 class="author-name">Marcus Bennett</h6>
-              <p class="author-location">Berlin, Germany</p>
+            <div class="flex flex-col gap-2">
+              <h6 class="text-white text-lg font-semibold leading-none md:text-xl lg:text-2xl">Marcus Bennett</h6>
+              <p class="text-[#929292] text-base font-medium leading-none md:text-lg lg:text-xl">Berlin, Germany</p>
             </div>
           </div>
         </div>

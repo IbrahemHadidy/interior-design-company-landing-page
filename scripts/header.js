@@ -15,21 +15,21 @@ setTimeout(() => {
     // Open Menu
     menuBtn.addEventListener("click", (event) => {
       event.stopPropagation();
-      menu.classList.remove("hidden-menu");
-      menu.classList.add("visible-menu");
+      menu.classList.remove("translate-x-full");
+      menu.classList.add("translate-x-0");
     });
 
     // Close Menu
     closeBtn.addEventListener("click", () => {
-      menu.classList.remove("visible-menu");
-      menu.classList.add("hidden-menu");
+      menu.classList.remove("translate-x-0");
+      menu.classList.add("translate-x-full");
     });
 
     // Click outside to close menu
     document.addEventListener("click", (event) => {
       if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
-        menu.classList.remove("visible-menu");
-        menu.classList.add("hidden-menu");
+        menu.classList.remove("translate-x-0");
+        menu.classList.add("translate-x-full");
       }
     });
 

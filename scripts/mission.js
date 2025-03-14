@@ -2,13 +2,17 @@
 
 function toggleFaq(element) {
   const faqContent = element.nextElementSibling;
-  const isOpen = faqContent.classList.contains("open");
+  const expandIcon = element.querySelector(".icon-expand");
+  const collapseIcon = element.querySelector(".icon-collapse");
 
-  if (isOpen) {
-    faqContent.classList.remove("open");
-    element.classList.remove("active");
-  } else {
-    faqContent.classList.add("open");
-    element.classList.add("active");
-  }
+  // Toggle height
+  faqContent.classList.toggle("max-h-[200px]");
+  faqContent.classList.toggle("max-h-0");
+
+  // Toggle icon visibility
+  expandIcon.classList.toggle("opacity-0");
+  expandIcon.classList.toggle("opacity-100");
+
+  collapseIcon.classList.toggle("opacity-100");
+  collapseIcon.classList.toggle("opacity-0");
 }
