@@ -25,7 +25,6 @@ loadsection("#hero", "./sections/hero.html");
 loadsection("#services", "./sections/services.html");
 loadsection("#mission", "./sections/mission.html");
 loadsection("#our-approach", "./sections/our-approach.html");
-loadsection("#our-values", "./sections/our-values.html");
 loadsection("#testimonials", "./sections/testimonials.html");
 loadsection("#subscription", "./sections/subscription.html");
 
